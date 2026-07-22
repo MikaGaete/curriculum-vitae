@@ -1,6 +1,5 @@
 #import "@preview/basic-resume:0.2.9": *
 
-// Put your personal information here, replacing mine
 #let name = "Mikael Gaete López"
 #let location = "Santiago, Chile"
 #let email = "jobs@mikael.cl"
@@ -11,15 +10,10 @@
 
 #show: resume.with(
   author: name,
-  // All the lines below are optional.
-  // For example, if you want to to hide your phone number:
-  // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
-  //github: github,
   linkedin: linkedin,
   phone: phone,
-  //personal-site: personal-site,
   accent-color: "#26428b",
   font: "New Computer Modern",
   paper: "us-letter",
@@ -29,27 +23,10 @@
 
 == Perfil
 
-Ingeniero Full-Stack con trayectoria liderando el ciclo de vida completo de productos SaaS. Especializado en el
-desarrollo con stacks modernos como TypeScript, Prisma y Next.js; con capacidad para ejecutar migraciones críticas de
-infraestructura y optimizar el rendimiento de sistemas complejos. Complemento mi perfil con conocimientos sólidos en
-ciberseguridad avanzada e integración estratégica de IA para potenciar la eficiencia y seguridad del software.
-
-== Educación
-
-#edu(
-  institution: "Universidad de Chile",
-  location: "Santiago, Chile",
-  dates: dates-helper(start-date: "Ago 2023", end-date: "Dic 2026"),
-  degree: "Ingeniería Civil en Computación"
-)
-- #[Cursos Relevantes: Minería de datos; Ciberseguridad; Taller de Hacking Competitivo.]
-
-#edu(
-  institution: "Universidad Diego Portales",
-  location: "Santiago, Chile",
-  dates: dates-helper(start-date: "Mar 2021", end-date: "Jul 2023"),
-  degree: "Ingeniería Civil en Informática y Telecomunicaciones"
-)
+Desarrollador full-stack e Ingeniero Civil en Computación en formación (Universidad de Chile), con experiencia que cruza
+desde el backend y bases de datos hasta seguridad de redes e infraestructura cloud. He liderado equipos, migrado
+sistemas críticos en producción sin pérdida de datos, y actualmente investigo la aplicación de técnicas de
+_prompt engineering_ para mejorar sistemas de traducción de consultas SQL.
 
 == Experiencia Laboral
 
@@ -57,28 +34,32 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   title: "Memorista",
   location: "Santiago, Chile",
   company: "Departamento de Ciencias de la Computación, Universidad de Chile",
-  dates: dates-helper(start-date: "Mar 2026", end-date: "Actualidad"),
+  dates: dates-helper(start-date: "Mar 2026", end-date: "Dic 2026"),
 )
-- Integración de un framework de abstracción matemática para motores de bases de datos en el sistema CrackSQL, mejorando
-  la precisión en la traducción de consultas SQL mediante la orquestación de LLMs y herramientas estáticas.
-- Incremento de la equivalencia semántica de las traducciones mediante el diseño avanzado de Ingeniería de Prompts y
-  técnicas de aprendizaje contextual (In-Context Learning).
+- Integré un _framework_ de abstracción matemática sobre un sistema de traducción de consultas SQL (basado en
+    herramientas estáticas e inteligencia artificial) mediante técnicas de Ingeniería de Prompts con el fin de mejorar
+    el proceso de traducción entre motores de bases de datos.
+- Incrementé la equivalencia semántica de las traducciones entre motores de bases de datos entregadas por el sistema de
+    traducción de consultas SQL mediante el diseño avanzado de _prompts_ vía In-Context Learning.
+- Incorporé herramientas de _agentic coding_ en el flujo de trabajo, minimizando el tiempo dedicado a tareas repetitivas
+    y permitiendo enfocarse en las áreas más relevantes del trabajo realizado.
 
 #work(
   title: "Tech Lead",
   location: "Santiago, Chile",
   company: "Departamento de Ciencias de la Computación, Universidad de Chile",
-  dates: dates-helper(start-date: "Mar 2026", end-date: "Actualidad"),
+  dates: dates-helper(start-date: "Mar 2026", end-date: "Jul 2026"),
 )
-- Diseño y desarrollo un algoritmo de asignación de personal médico y boxes para el CESFAM La Islita, transformando
-  procesos manuales en una plataforma web escalable.
-- Las tecnologías utilizadas son: React, TypeScript y TailwindCSS para el front-end; Node, Express y TypeScript para
-  el back-end; y PostgreSQL como motor de bases de datos, cuya comunicación con el back-end se realiza mediante el ORM
-  para TypeScript Prisma.
-- Coordino un equipo de 5 desarrolladores bajo metodología ágil (Jira), asegurando la calidad del código mediante code
-  reviews y una arquitectura de branches eficiente en GitHub.
-- Comunicación efectiva con el cliente, para entender sus necesidades y requerimientos de la mejor manera, así como
-  también entregarle actualizaciones periódicas sobre el estado del desarrollo.
+- Diseñé y desarrollé una plataforma web que automatizó la asignación de personal médico y boxes de atención
+    pertenecientes a un recinto público de atención primaria, reemplazando un proceso completamente manual y reduciendo
+    el tiempo de asignación hasta en un 75%.
+- Lideré un equipo de 5 desarrolladores bajo metodología ágil (mediante Jira), con _code reviews_ estructurados,
+    reuniones bisemanales y una arquitectura de _branches_ en GitHub que minimizó los conflictos de integración.
+- Incorporé herramientas de _agentic coding_ en el flujo del equipo bajo un enfoque _spec-driven_: definición de
+    requerimientos y contratos de interfaz antes de cualquier generación, usando inteligencia artificial para acelerar
+    la implementación sin delegar decisiones de arquitectura ni revisión de código.
+- Stack utilizado: React, TypeScript y TailwindCSS en el front-end; Node.js, Express y TypeScript en el backend; y
+    PostgreSQL en conjunto con PrismaORM para la base de datos.
 
 #work(
   title: "Full-Stack Developer",
@@ -86,12 +67,10 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   company: "Freelance",
   dates: dates-helper(start-date: "Feb 2026", end-date: "Abr 2026"),
 )
-- Diseñé e implementé un módulo de gestión de contenidos que permite la creación de páginas dinámicas y personalizables
-  íntegramente desde el panel administrativo.
-- Integré funcionalidades para la carga, almacenamiento y distribución de diversos formatos de archivos (Audios, PDFs,
-  entre otros) y recursos externos, optimizando la entrega de contenido.
-- Desarrollé un motor de renderizado dinámico en el frontend que adapta la interfaz según la configuración del
-  administrador, eliminando la necesidad de intervenciones técnicas para nuevas publicaciones.
+- Desarrollé un módulo de gestión de contenidos que permite crear y publicar páginas dinámicas íntegramente desde el
+    panel administrativo, eliminando la necesidad de intervenciones técnicas para nuevas publicaciones.
+- Implementé carga, almacenamiento y distribución de archivos (audios, PDFs) y un motor de renderizado dinámico que
+    adapta la UI según la configuración del administrador.
 
 #work(
   title: "Practicante (II)",
@@ -99,14 +78,12 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   company: "Corporación Z - DatoCohete",
   dates: dates-helper(start-date: "Dic 2025", end-date: "Feb 2026"),
 )
-- Lideré el diseño y desarrollo de la arquitectura de servidor para una solución contable, integrando servicios de
-  calificación automática de compras ante el SII.
-- Implementé la lógica de comunicación omnicanal utilizando Twilio, permitiendo a los usuarios gestionar sus cuentas y
-  obtener protección legal de mensajes directamente desde su teléfono.
-- Configuré Kafka para el manejo inmutable de eventos y Redis para la gestión de estados de intención, asegurando la
-  continuidad del flujo conversacional entre mensajes.
-- Diseñé el modelo de datos en PostgreSQL mediante Prisma ORM para garantizar una comunicación eficiente con el backend
-  desarrollado en Fastify/TypeScript.
+- Diseñé la arquitectura de servidor para una solución contable con integración al Servicio de Impuestos Internos (SII)
+    para la calificación automática de compras y de contribuyentes.
+- Implementé mensajería omnicanal mediante la integración de la API de Twilio, permitiendo a los usuarios gestionar
+    cuentas, gestionar clientes, acceder a una inteligencia artificial de contaduría y obtener protección legal
+    directamente desde su teléfono.
+- Modelé la base de datos en PostgreSQL en conjunto con el ORM Prisma sobre un back-end basado en Fastify y TypeScript.
 
 #work(
   title: "Software Engineer",
@@ -114,14 +91,15 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   company: "Corporación Z - DatoCohete",
   dates: dates-helper(start-date: "Mar 2025", end-date: "Dic 2025"),
 )
-- Desarrollé diversas aplicaciones web en Next.js y React, junto con una aplicación móvil híbrida tipo "Uber Eats" para
-  servicios del hogar utilizando Flutter y Firebase.
-- Administré el despliegue de sitios en Vercel y la configuración de seguridad DNS en Cloudflare, además de integrar
-  sistemas de mailing profesional como Resend y Zoho.
-- Implementé flujos de CI/CD para el despliegue acelerado de un sistema RAG (IA) propietario en Azure, reduciendo
-  significativamente los tiempos de paso a producción.
-- Trabajo en equipo de manera continua, con reuniones semanales para asegurar que el equipo tenga el mismo enfoque y los
-  mismos objetivos, según correspondiese.
+- Desarrollé múltiples aplicaciones web basadas en el framework Next.js y asistí en el desarrollo de una aplicación
+    móvil tipo marketplace de servicios del hogar basada en Flutter y Firebase.
+- Implementé pipelines CI/CD que redujeron significativamente los tiempos de despliegue a producción de un sistema RAG
+    propietario en Azure.
+- Administré despliegues en el servicio de hosting Vercel, configurando los DNS en Cloudflare y solucionando potenciales
+    problemas.
+- Integré múltiples servicios de _mailing_: configuré la plataforma Zoho para el uso de correos corporativos y se
+    integró la API de mailing Resend para el envío de correos automatizados. Adicionalmente, también se configuraron
+    los registros DNS requeridos para el correcto envío de correos.
 
 #work(
   title: "Full-Stack Dev",
@@ -133,7 +111,7 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   lo que requirió una reestructuración profunda del core de la aplicación.
 - Aproveché la migración para limpiar deuda técnica y mejorar la eficiencia de las consultas en la base de datos
   (Prisma/MySQL), adaptando el sistema a nuevos requerimientos operativos.
-- Garanticé la integridad de los datos de los usuarios existentes durante la transición, resultando en cero perdidas
+- Garanticé la integridad de los datos de los usuarios existentes durante la transición, resultando en cero pérdidas
   de información a lo largo del proceso.
 
 #work(
@@ -163,7 +141,7 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   plataforma.
 - Migración de sistema de mailing utilizado por la empresa hacia los servidores de AWS para asegurar su correcto
   funcionamiento y mejorar la seguridad de este.
-- Reuniones y trabajo conjunto con otros practicantes de la empresa, este último consistia en guiarlos en sus tareas y
+- Reuniones y trabajo conjunto con otros practicantes de la empresa, este último consistía en guiarlos en sus tareas y
   brindarles apoyo en cuanto a la planificación o desarrollo de los proyectos que se les fueron asignados, todo esto con
   el fin de agilizar y optimizar los procesos de desarrollo dentro de la empresa.
 
@@ -181,13 +159,30 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   del proyecto y de revisar los avances realizados, además de verificar que se están cumpliendo los objetivos
   establecidos y las expectativas de la empresa cliente.
 
+== Educación
+
+#edu(
+  institution: "Universidad de Chile",
+  location: "Santiago, Chile",
+  dates: dates-helper(start-date: "Ago 2023", end-date: "Dic 2026"),
+  degree: "Ingeniería Civil en Computación"
+)
+- #[Cursos Relevantes: Minería de datos; Ciberseguridad; Taller de Hacking Competitivo.]
+
+#edu(
+  institution: "Universidad Diego Portales",
+  location: "Santiago, Chile",
+  dates: dates-helper(start-date: "Mar 2021", end-date: "Jul 2023"),
+  degree: "Ingeniería Civil en Informática y Telecomunicaciones"
+)
+
 == Habilidades
 - *Lenguajes de Programación*: JavaScript, TypeScript, Python, C/C++, HTML/CSS, Java, Scala, Flutter, Dart, Bash.
 - *Tecnologías*: React, Next.js, Tailwind CSS, Prisma ORM, Git, Django, UNIX, Docker, Jira, NGINX, AWS, Azure, Digital
   Ocean, Vercel.
 - *Bases de Datos*: MySQL, PostgreSQL, MongoDB.
 - *Herramientas*: GitHub, Jira, Figma.
-- *Idiomas*: Español (nativo), Inglés (avanzado).
+- *Idiomas*: Español (nativo), Inglés (C1).
 
 == Certificaciones
 
@@ -210,26 +205,20 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
 #project(
   name: "Home Lab & Cloud Infrastructure"
 )
-- Administro un servidor personal con servicios de identidad (Authentik) y automatización (Home Assistant), orquestando
-  el acceso remoto seguro mediante Cloudflare Tunnels.
-- Configuro servidores proxy (Nginx), registros DNS y políticas de permisos para garantizar la integridad del servidor y
-  la red local.
-- Proyecto la implementación de TrueNAS para soberanía de datos y gestores de contraseñas encriptados auto-alojados para
-  eliminar la dependencia de nubes de terceros.
+- Administro un servidor personal en el cual alojo múltiples servicios; siendo algunos de estos
+    #link("https://plane.so/", [Plane]), #link("https://n8n.io/", [n8n]) y
+    #link("https://goauthentik.io/", [Authentik]). Adicionalmente, manejo un segundo servidor perteneciente a
+    AWS, en el cual mantengo una instancia de #link("https://pangolin.net/", [Pangolin]), la cual me permite
+    acceder a mis servicios desde cualquier lugar de manera segura gracias al uso de túneles.
+- Configuro proxies inversos mediante el servidor web Nginx para redireccionar apropiadamente las consultas recibidas
+    desde Pangolin.
 
 #project(
   name: "Network Engineering & Hardening"
 )
-- Diseño e implemento arquitecturas de red segmentadas para aislar dispositivos IoT de la red principal, mitigando
-  vectores de ataque internos.
-- Configuración de firewalls avanzados y túneles OpenVPN a nivel de gateway para asegurar el cifrado de todo el tráfico
-  saliente y la privacidad de la red local.
-
-#project(
-  name: "FCFM Interactive Mesh"
-)
-- Desarrollé una plataforma para estudiantes de Ingeniería en la Universidad de Chile que permite el seguimiento del
-  progreso académico y el mapeo dinámico de pre-requisitos.
+- Diseñe e implementé una arquitectura de red basada en la segmentación de grupos de dispositivos mediante el uso de
+    VLANs, mitigando vectores de ataque internos y reduciendo la superficie de ataque. Dicha configuración se llevó a
+    cabo mediante el software #link("https://opnsense.org/", [OPNSense]) y _managed switches_.
 
 == Actividades Extracurriculares
 
@@ -246,6 +235,6 @@ ciberseguridad avanzada e integración estratégica de IA para potenciar la efic
   activity: "Voluntariado | IEEE Computer Society",
   dates: dates-helper(start-date: "Sep 2023", end-date: "Dic 2024"),
 )
-- Colaboré en la organización logística de el evento tecnológico denominado "TechDay" en la FCFM, facilitando el
+- Colaboré en la organización logística del evento tecnológico denominado "TechDay" en la FCFM, facilitando el
   networking entre la academia y la industria.
 - Apoyo en la gestión de actividades para el capítulo estudiantil orientadas al desarrollo técnico de la comunidad.
