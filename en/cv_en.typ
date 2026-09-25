@@ -4,7 +4,7 @@
 #let location = "Santiago, Chile"
 #let email = "jobs@mikael.cl"
 #let github = "github.com/MikaGaete"
-#let linkedin = "linkedin.com/in/mikael-gaete-lópez-520b3721b"
+#let linkedin = "linkedin.com/in/meek-gl/"
 #let phone = "+569 8734 3205"
 #let personal-site = "mikael.cl"
 
